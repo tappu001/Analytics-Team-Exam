@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Exam: Level Selection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-8">
+
+        <!-- Level Selection -->
+        <div id="level-selection-container" class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-[#132b3d] mb-4">Choose Your Exam Level</h1>
+            <p class="text-lg text-gray-600 mb-8">Select a difficulty level to begin the exam.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Level -->
+                <a href="basic.html" class="level-card block bg-white p-8 rounded-lg shadow-xl border-t-4 border-green-500 no-underline text-gray-800">
+                    <h2 class="text-2xl font-bold text-[#132b3d] mb-3">Level 1: Basic</h2>
+                    <p class="text-gray-600">Fundamentals of GA4, GTM, Server-side Tagging, and Cookie Consent.</p>
+                </a>
+                <!-- Intermediate Level -->
+                <a href="intermediate.html" class="level-card block bg-white p-8 rounded-lg shadow-xl border-t-4 border-yellow-500 no-underline text-gray-800">
+                    <h2 class="text-2xl font-bold text-[#132b3d] mb-3">Level 2: Intermediate</h2>
+                    <p class="text-gray-600">Custom events, data layer debugging, and consent integration.</p>
+                </a>
+                <!-- Advanced Level -->
+                <a href="advanced.html" class="level-card block bg-white p-8 rounded-lg shadow-xl border-t-4 border-red-500 no-underline text-gray-800">
+                    <h2 class="text-2xl font-bold text-[#132b3d] mb-3">Level 3: Advanced</h2>
+                    <p class="text-gray-600">Advanced debugging, deduplication, and attribution modeling.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
